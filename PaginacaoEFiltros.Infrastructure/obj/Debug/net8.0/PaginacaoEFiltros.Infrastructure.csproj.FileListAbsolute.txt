@@ -13,3 +13,4 @@ C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Debug\net8.0\
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Debug\net8.0\refint\PaginacaoEFiltros.Infrastructure.dll
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Debug\net8.0\PaginacaoEFiltros.Infrastructure.pdb
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Debug\net8.0\ref\PaginacaoEFiltros.Infrastructure.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Debug\net8.0\PaginacaoEFiltros.Infrastructure.sourcelink.json

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PaginacaoEFiltros.Application.DTOs;
+using PaginacaoEFiltros.Application.Domain.DTOs;
 using PaginacaoEFiltros.Application.Services;
 
 namespace PaginacaoEFiltros.Api.Controllers

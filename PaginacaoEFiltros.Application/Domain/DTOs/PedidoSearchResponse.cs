@@ -1,6 +1,6 @@
 using PaginacaoEFiltros.Application.Common;
 
-namespace PaginacaoEFiltros.Application.DTOs
+namespace PaginacaoEFiltros.Application.Domain.DTOs
 {
     /// <summary>
     /// Resposta simplificada de pesquisa de pedidos

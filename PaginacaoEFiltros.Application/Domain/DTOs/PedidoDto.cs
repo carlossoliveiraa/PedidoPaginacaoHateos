@@ -1,4 +1,4 @@
-namespace PaginacaoEFiltros.Application.DTOs
+namespace PaginacaoEFiltros.Application.Domain.DTOs
 {
     /// <summary>
     /// DTO simplificado para Pedido

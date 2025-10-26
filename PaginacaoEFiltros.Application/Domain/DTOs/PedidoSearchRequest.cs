@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PaginacaoEFiltros.Application.DTOs
+namespace PaginacaoEFiltros.Application.Domain.DTOs
 {
     /// <summary>
     /// Requisição simplificada de pesquisa de pedidos
@@ -31,7 +31,7 @@ namespace PaginacaoEFiltros.Application.DTOs
         /// <summary>
         /// Total de itens por página
         /// </summary>
-        [Range(1, 1000)]
+        [Range(1, 150)]
         public int TotalItensPagina { get; set; } = 10;
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace PaginacaoEFiltros.Application.DTOs
         /// </summary>
         public bool IsValid()
         {
-            return PaginaInicial >= 1 && TotalItensPagina >= 1 && TotalItensPagina <= 1000;
+            return PaginaInicial >= 1 && TotalItensPagina >= 1 && TotalItensPagina <= 150;
         }
     }
 }

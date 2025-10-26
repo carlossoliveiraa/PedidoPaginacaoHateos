@@ -1,7 +1,7 @@
-using PaginacaoEFiltros.Application.DTOs;
-using PaginacaoEFiltros.Application.Entities;
 using PaginacaoEFiltros.Application.Common;
 using PaginacaoEFiltros.Application.Interfaces;
+using PaginacaoEFiltros.Application.Domain.DTOs;
+using PaginacaoEFiltros.Application.Domain.Entities;
 
 namespace PaginacaoEFiltros.Application.Services
 {

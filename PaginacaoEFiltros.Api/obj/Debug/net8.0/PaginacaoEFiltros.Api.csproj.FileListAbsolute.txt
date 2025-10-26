@@ -37,3 +37,4 @@ C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\refint\Pagi
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.pdb
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.genruntimeconfig.cache
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\ref\PaginacaoEFiltros.Api.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.sourcelink.json

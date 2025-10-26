@@ -1,5 +1,5 @@
-using PaginacaoEFiltros.Application.DTOs;
-using PaginacaoEFiltros.Application.Entities;
+using PaginacaoEFiltros.Application.Domain.DTOs;
+using PaginacaoEFiltros.Application.Domain.Entities;
 
 namespace PaginacaoEFiltros.Application.Interfaces
 {

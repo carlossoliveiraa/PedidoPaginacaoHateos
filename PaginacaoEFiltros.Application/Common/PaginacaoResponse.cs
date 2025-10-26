@@ -5,8 +5,7 @@ namespace PaginacaoEFiltros.Application.Common
     /// <summary>
     /// Retorno de paginação
     /// </summary>
-    public abstract class PaginacaoResponse<TRequest, TRow>
-        where TRequest : PaginacaoRequest
+    public abstract class PaginacaoResponse<TRequest, TRow> where TRequest : PaginacaoRequest
     {
         /// <summary>
         /// Requisição de paginação

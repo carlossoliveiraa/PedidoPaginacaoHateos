@@ -9,3 +9,4 @@ C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Debug\net8.0\Pag
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Debug\net8.0\refint\PaginacaoEFiltros.Application.dll
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Debug\net8.0\PaginacaoEFiltros.Application.pdb
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Debug\net8.0\ref\PaginacaoEFiltros.Application.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Debug\net8.0\PaginacaoEFiltros.Application.sourcelink.json

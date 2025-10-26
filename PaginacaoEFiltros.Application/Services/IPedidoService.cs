@@ -1,4 +1,4 @@
-using PaginacaoEFiltros.Application.DTOs;
+using PaginacaoEFiltros.Application.Domain.DTOs;
 
 namespace PaginacaoEFiltros.Application.Services
 {

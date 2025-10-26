@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PaginacaoEFiltros.Application.DTOs.PedidoSearchResponse",
+        "Type": "PaginacaoEFiltros.Application.Domain.DTOs.PedidoSearchResponse",
         "MediaTypes": [
           "application/json"
         ],

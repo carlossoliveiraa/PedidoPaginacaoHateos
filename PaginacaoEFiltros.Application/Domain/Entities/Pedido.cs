@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PaginacaoEFiltros.Application.Entities
+namespace PaginacaoEFiltros.Application.Domain.Entities
 {
     /// <summary>
     /// Entidade Pedido

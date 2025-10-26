@@ -47,7 +47,7 @@
             "name": "TotalItensPagina",
             "in": "query",
             "schema": {
-              "maximum": 1000,
+              "maximum": 150,
               "minimum": 1,
               "type": "integer",
               "format": "int32"

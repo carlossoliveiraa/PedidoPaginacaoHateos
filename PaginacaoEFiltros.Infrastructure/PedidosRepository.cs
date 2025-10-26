@@ -1,6 +1,6 @@
-﻿using PaginacaoEFiltros.Application.Entities;
-using PaginacaoEFiltros.Application.DTOs;
-using PaginacaoEFiltros.Application.Interfaces;
+﻿using PaginacaoEFiltros.Application.Interfaces;
+using PaginacaoEFiltros.Application.Domain.DTOs;
+using PaginacaoEFiltros.Application.Domain.Entities;
 
 namespace PaginacaoEFiltros.Infrastructure
 {
@@ -9,11 +9,11 @@ namespace PaginacaoEFiltros.Infrastructure
     /// </summary>
     public class PedidosRepository : IPedidoRepository
     {
-        private readonly List<Pedido> _entities = new();
+        private readonly List<Pedido> _pedidosPopuladoFake = new();
 
         public PedidosRepository()
         {
-            InitializeSampleData();
+            PopulaPedidosFake();
         }
 
 
@@ -22,7 +22,7 @@ namespace PaginacaoEFiltros.Infrastructure
         /// </summary>
         public async Task<(IEnumerable<Pedido> Items, int TotalCount)> SearchAsync(PedidoSearchRequest request)
         {
-            var query = _entities.AsQueryable();
+            var query = _pedidosPopuladoFake.AsQueryable();
 
             // Aplica filtros específicos
             if (!string.IsNullOrWhiteSpace(request.NumeroPedido))
@@ -53,10 +53,9 @@ namespace PaginacaoEFiltros.Infrastructure
             return await Task.FromResult((items, totalCount));
         }
 
-        /// <summary>
-        /// Inicializa dados de exemplo mais robustos
-        /// </summary>
-        private void InitializeSampleData()
+        #region PedidosFakes
+
+        private void PopulaPedidosFake()
         {
             var pedidos = new List<Pedido>
             {
@@ -350,7 +349,9 @@ namespace PaginacaoEFiltros.Infrastructure
                 }
             };
 
-            _entities.AddRange(pedidos);
+            _pedidosPopuladoFake.AddRange(pedidos);
         }
+
+        #endregion
     }
 }
