@@ -1,0 +1,15 @@
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\bin\Release\net8.0\PaginacaoEFiltros.Infrastructure.deps.json
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\bin\Release\net8.0\PaginacaoEFiltros.Infrastructure.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\bin\Release\net8.0\PaginacaoEFiltros.Infrastructure.pdb
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\bin\Release\net8.0\PaginacaoEFiltros.Application.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\bin\Release\net8.0\PaginacaoEFiltros.Application.pdb
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.csproj.AssemblyReference.cache
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.AssemblyInfoInputs.cache
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.AssemblyInfo.cs
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\Paginaca.819A9CD6.Up2Date
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\refint\PaginacaoEFiltros.Infrastructure.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\PaginacaoEFiltros.Infrastructure.pdb
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Infrastructure\obj\Release\net8.0\ref\PaginacaoEFiltros.Infrastructure.dll

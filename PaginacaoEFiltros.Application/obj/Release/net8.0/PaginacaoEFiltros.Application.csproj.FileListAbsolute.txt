@@ -1,0 +1,11 @@
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\bin\Release\net8.0\PaginacaoEFiltros.Application.deps.json
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\bin\Release\net8.0\PaginacaoEFiltros.Application.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\bin\Release\net8.0\PaginacaoEFiltros.Application.pdb
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.AssemblyInfoInputs.cache
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.AssemblyInfo.cs
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\refint\PaginacaoEFiltros.Application.dll
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\PaginacaoEFiltros.Application.pdb
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Application\obj\Release\net8.0\ref\PaginacaoEFiltros.Application.dll

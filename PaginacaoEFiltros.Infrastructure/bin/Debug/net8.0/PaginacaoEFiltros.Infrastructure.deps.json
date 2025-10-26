@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PaginacaoEFiltros.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PaginacaoEFiltros.Application": "1.0.0"
+        },
+        "runtime": {
+          "PaginacaoEFiltros.Infrastructure.dll": {}
+        }
+      },
+      "PaginacaoEFiltros.Application/1.0.0": {
+        "runtime": {
+          "PaginacaoEFiltros.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PaginacaoEFiltros.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PaginacaoEFiltros.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "ContainingType": "PaginacaoEFiltros.Api.Controllers.PedidosController",
+    "Method": "Get",
+    "RelativePath": "api/Pedidos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroPedido",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NomeCliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UF",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaginaInicial",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalItensPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PaginacaoEFiltros.Application.DTOs.PedidoSearchResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  }
+]
