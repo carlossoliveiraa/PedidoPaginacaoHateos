@@ -8,7 +8,7 @@ namespace PaginacaoEFiltros.Api.Controllers
     /// Controller para operações com Pedidos
     /// </summary>
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [Produces("application/json")]
     public class PedidosController : ControllerBase
     {
@@ -35,7 +35,10 @@ namespace PaginacaoEFiltros.Api.Controllers
             if (!request.IsValid())
                 return BadRequest("Parâmetros de pesquisa inválidos.");
 
-            var response = await _pedidoService.SearchSimplifiedAsync(request);
+            // Constrói a URL base para os links HATEOAS
+            var baseUrl = $"{Request.Scheme}://{Request.Host}/v1/pedidos";
+
+            var response = await _pedidoService.SearchSimplifiedAsync(request, baseUrl);
             return Ok(response);
         }
     }

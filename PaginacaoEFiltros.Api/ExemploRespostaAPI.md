@@ -1,145 +1,82 @@
-# Exemplo de Resposta da API de Pedidos
+# Exemplo de Resposta da API - Paginação HATEOAS
 
 ## Endpoint
-`GET /api/pedidos`
-
-## Parâmetros de Query
-- `numeroPedido` (opcional): Número do pedido para filtrar
-- `nomeCliente` (opcional): Nome do cliente para filtrar
-- `uf` (opcional): UF do cliente para filtrar
-- `paginaInicial` (obrigatório): Página inicial (padrão: 1)
-- `totalItensPagina` (obrigatório): Total de itens por página (padrão: 10)
-
-## Exemplo de Requisição
 ```
-GET /api/pedidos?paginaInicial=1&totalItensPagina=10&nomeCliente=João&uf=SP
+GET /v1/pedidos?limite=2&pagina=1&nome-cliente=João&uf=SP
 ```
 
-## Exemplo de Resposta
+## Resposta JSON
 ```json
 {
-  "pagina": 1,
-  "total": 12,
-  "links": [
-    {
-      "rel": "next",
-      "href": "/api/pedidos?paginaInicial=2&totalItensPagina=5",
-      "method": "GET"
-    },
-    {
-      "rel": "last",
-      "href": "/api/pedidos?paginaInicial=3&totalItensPagina=5",
-      "method": "GET"
-    },
-    {
-      "rel": "self",
-      "href": "/api/pedidos?paginaInicial=1&totalItensPagina=5",
-      "method": "GET"
-    }
-  ],
+  "links": {
+    "pagina_atual": "/v1/pedidos?limite=2&pagina=1&nome-cliente=João&uf=SP",
+    "pagina_anterior": null,
+    "proxima_pagina": "/v1/pedidos?limite=2&pagina=2&nome-cliente=João&uf=SP",
+    "primeira_pagina": "/v1/pedidos?limite=2&pagina=1&nome-cliente=João&uf=SP",
+    "ultima_pagina": "/v1/pedidos?limite=2&pagina=12957&nome-cliente=João&uf=SP"
+  },
+  "paginacao": {
+    "pagina": 1,
+    "registros_pagina": 2,
+    "total_paginas": 12957,
+    "total_registros_encontrados": 25914
+  },
   "pedidos": [
-    {
-      "pedidoId": 5,
-      "cliente": "Carlos Ferreira",
-      "uf": "RS",
-      "valor": 100.00
-    },
-    {
-      "pedidoId": 10,
-      "cliente": "Patricia Souza",
-      "uf": "SP",
-      "valor": 250.00
-    },
-    {
-      "pedidoId": 4,
-      "cliente": "Ana Costa",
-      "uf": "SP",
-      "valor": 200.00
-    },
-    {
-      "pedidoId": 9,
-      "cliente": "Marcos Pereira",
-      "uf": "RS",
-      "valor": 420.00
-    },
-    {
-      "pedidoId": 3,
-      "cliente": "Pedro Oliveira",
-      "uf": "MG",
-      "valor": 450.00
-    }
-  ]
-}
-```
-
-## Exemplo com Filtros
-### Requisição com filtro por UF
-```
-GET /api/pedidos?paginaInicial=1&totalItensPagina=3&uf=SP
-```
-
-### Resposta com filtro por UF
-```json
-{
-  "pagina": 1,
-  "total": 4,
-  "links": [
-    {
-      "rel": "next",
-      "href": "/api/pedidos?paginaInicial=2&totalItensPagina=3&uf=SP",
-      "method": "GET"
-    },
-    {
-      "rel": "last",
-      "href": "/api/pedidos?paginaInicial=2&totalItensPagina=3&uf=SP",
-      "method": "GET"
-    },
-    {
-      "rel": "self",
-      "href": "/api/pedidos?paginaInicial=1&totalItensPagina=3&uf=SP",
-      "method": "GET"
-    }
-  ],
-  "pedidos": [
-    {
-      "pedidoId": 10,
-      "cliente": "Patricia Souza",
-      "uf": "SP",
-      "valor": 250.00
-    },
-    {
-      "pedidoId": 4,
-      "cliente": "Ana Costa",
-      "uf": "SP",
-      "valor": 200.00
-    },
     {
       "pedidoId": 1,
       "cliente": "João Silva",
       "uf": "SP",
-      "valor": 150.00
+      "valor": 150.50
+    },
+    {
+      "pedidoId": 2,
+      "cliente": "João Santos",
+      "uf": "SP",
+      "valor": 275.75
     }
   ]
 }
 ```
 
-## Estrutura da Resposta
+## Estrutura dos Links HATEOAS
 
-### Campos Principais
+### Links Disponíveis
+- **pagina_atual**: URL da página atual (sempre presente)
+- **pagina_anterior**: URL da página anterior (null se for a primeira página)
+- **proxima_pagina**: URL da próxima página (null se for a última página)
+- **primeira_pagina**: URL da primeira página (sempre presente)
+- **ultima_pagina**: URL da última página (sempre presente)
+
+### Informações de Paginação
 - **pagina**: Número da página atual
-- **total**: Total de registros encontrados
-- **links**: Array de links HATEOAS para navegação
-- **pedidos**: Array com os pedidos encontrados
+- **registros_pagina**: Quantidade de registros por página
+- **total_paginas**: Total de páginas disponíveis
+- **total_registros_encontrados**: Total de registros encontrados
 
-### Links HATEOAS
-Os links incluem:
-- `first`: Primeira página
-- `prev`: Página anterior
-- `next`: Próxima página
-- `last`: Última página
+## Parâmetros de Query Suportados
 
-### Estrutura do Pedido
-- **pedidoId**: ID único do pedido
-- **cliente**: Nome do cliente
-- **uf**: UF do cliente
-- **valor**: Valor total do pedido
+### Paginação
+- `limite`: Quantidade de registros por página (padrão: 10, máximo: 150)
+- `pagina`: Número da página (começando em 1)
+
+### Filtros
+- `numero-pedido`: Filtro por número do pedido
+- `nome-cliente`: Filtro por nome do cliente
+- `uf`: Filtro por UF do cliente
+
+## Exemplos de Uso
+
+### Primeira página
+```
+GET /v1/pedidos?limite=10&pagina=1
+```
+
+### Página específica com filtros
+```
+GET /v1/pedidos?limite=5&pagina=3&uf=RJ&nome-cliente=Maria
+```
+
+### Última página
+```
+GET /v1/pedidos?limite=10&pagina=12957&uf=SP
+```

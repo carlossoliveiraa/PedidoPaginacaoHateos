@@ -2,7 +2,7 @@
   {
     "ContainingType": "PaginacaoEFiltros.Api.Controllers.PedidosController",
     "Method": "Get",
-    "RelativePath": "api/Pedidos",
+    "RelativePath": "v1/Pedidos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -23,12 +23,12 @@
         "IsRequired": false
       },
       {
-        "Name": "PaginaInicial",
+        "Name": "Pagina",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "TotalItensPagina",
+        "Name": "Limite",
         "Type": "System.Int32",
         "IsRequired": false
       }

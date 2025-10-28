@@ -53,4 +53,5 @@ static void ConfigureServices(IServiceCollection services)
 
     // Serviços
     services.AddScoped<IPedidoService, PedidoService>();
+    services.AddScoped<IHateoasLinkService, HateoasLinkService>();
 }

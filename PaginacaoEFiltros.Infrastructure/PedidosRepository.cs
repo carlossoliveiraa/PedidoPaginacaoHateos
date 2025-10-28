@@ -47,8 +47,8 @@ namespace PaginacaoEFiltros.Infrastructure
             query = query.OrderByDescending(p => p.DataCriacao);
 
             // Aplica paginação
-            var skip = (request.PaginaInicial - 1) * request.TotalItensPagina;
-            var items = query.Skip(skip).Take(request.TotalItensPagina).ToList();
+            var skip = (request.Pagina - 1) * request.Limite;
+            var items = query.Skip(skip).Take(request.Limite).ToList();
 
             return await Task.FromResult((items, totalCount));
         }

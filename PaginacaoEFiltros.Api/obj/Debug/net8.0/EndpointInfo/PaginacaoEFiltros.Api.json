@@ -6,7 +6,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Pedidos": {
+    "/v1/Pedidos": {
       "get": {
         "tags": [
           "Pedidos"
@@ -34,7 +34,7 @@
             }
           },
           {
-            "name": "PaginaInicial",
+            "name": "Pagina",
             "in": "query",
             "schema": {
               "maximum": 2147483647,
@@ -44,7 +44,7 @@
             }
           },
           {
-            "name": "TotalItensPagina",
+            "name": "Limite",
             "in": "query",
             "schema": {
               "maximum": 150,
@@ -81,18 +81,48 @@
   },
   "components": {
     "schemas": {
-      "LinkDto": {
+      "PaginacaoInfoDto": {
         "type": "object",
         "properties": {
-          "rel": {
+          "pagina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "registrosPagina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPaginas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalRegistrosEncontrados": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaginacaoLinksDto": {
+        "type": "object",
+        "properties": {
+          "paginaAtual": {
             "type": "string",
             "nullable": true
           },
-          "href": {
+          "paginaAnterior": {
             "type": "string",
             "nullable": true
           },
-          "method": {
+          "proximaPagina": {
+            "type": "string",
+            "nullable": true
+          },
+          "primeiraPagina": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaPagina": {
             "type": "string",
             "nullable": true
           }
@@ -124,20 +154,11 @@
       "PedidoSearchResponse": {
         "type": "object",
         "properties": {
-          "pagina": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "total": {
-            "type": "integer",
-            "format": "int32"
-          },
           "links": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LinkDto"
-            },
-            "nullable": true
+            "$ref": "#/components/schemas/PaginacaoLinksDto"
+          },
+          "paginacao": {
+            "$ref": "#/components/schemas/PaginacaoInfoDto"
           },
           "pedidos": {
             "type": "array",

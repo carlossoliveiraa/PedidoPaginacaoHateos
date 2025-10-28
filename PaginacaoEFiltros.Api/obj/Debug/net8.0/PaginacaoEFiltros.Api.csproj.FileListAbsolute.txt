@@ -30,7 +30,6 @@ C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebas
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\Paginaca.885F6C1A.Up2Date
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.dll
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\refint\PaginacaoEFiltros.Api.dll
@@ -38,3 +37,4 @@ C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEF
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.genruntimeconfig.cache
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\ref\PaginacaoEFiltros.Api.dll
 C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\PaginacaoEFiltros.Api.sourcelink.json
+C:\Projetos\PaginacaoEFiltros\PaginacaoEFiltros.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

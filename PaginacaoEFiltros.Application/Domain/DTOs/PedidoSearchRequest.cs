@@ -23,23 +23,23 @@ namespace PaginacaoEFiltros.Application.Domain.DTOs
         public string? UF { get; set; }
 
         /// <summary>
-        /// Página inicial (começando em 1)
+        /// Página atual (começando em 1)
         /// </summary>
         [Range(1, int.MaxValue)]
-        public int PaginaInicial { get; set; } = 1;
+        public int Pagina { get; set; } = 1;
 
         /// <summary>
-        /// Total de itens por página
+        /// Limite de itens por página
         /// </summary>
         [Range(1, 150)]
-        public int TotalItensPagina { get; set; } = 10;
+        public int Limite { get; set; } = 10;
 
         /// <summary>
         /// Valida se a requisição está correta
         /// </summary>
         public bool IsValid()
         {
-            return PaginaInicial >= 1 && TotalItensPagina >= 1 && TotalItensPagina <= 150;
+            return Pagina >= 1 && Limite >= 1 && Limite <= 150;
         }
     }
 }

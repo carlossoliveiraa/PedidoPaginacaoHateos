@@ -21,3 +21,4 @@ namespace PaginacaoEFiltros.Application.Common
         public string Method { get; set; } = string.Empty;
     }
 }
+

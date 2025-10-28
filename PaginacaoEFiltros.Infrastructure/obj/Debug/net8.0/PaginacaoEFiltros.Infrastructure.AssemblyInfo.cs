@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PaginacaoEFiltros.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52188f24ce2ad7bc1522473eba8324cd7c3c8bad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+debcd5dafa34b7266261a1509cf9fe6882a8a863")]
 [assembly: System.Reflection.AssemblyProductAttribute("PaginacaoEFiltros.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PaginacaoEFiltros.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
